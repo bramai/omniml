@@ -1,0 +1,40 @@
+name: Question
+description: Any questions or clarification about the tool
+title: "[Question] kebab-cased-shortened-question"
+labels: ["Status: Pending", "Type: Question"]
+
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: Describe your question in as detail as possible.
+      placeholder: What is the question?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify what all information is required to be provided. Please decribe multiple bullet points for every details required.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
+  - type: textarea
+    id: related-questions
+    attributes:
+      label: Related Issues/Questions
+      description: Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that caused your confusion would be helpful.
+      placeholder: |
+        - #1
+        - #5
+        ...

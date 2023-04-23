@@ -1,0 +1,50 @@
+name: Documentation
+description: Improve or add new documentation including code comments.
+title: "[Documentation] kebab-cased-name-of-documentation-change"
+labels: ["Status: Pending", "Type: Documentation"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please mention the file or module for which improvement is needed.
+  - type: dropdown
+    id: documentation-type
+    attributes:
+      label: Documentation Type
+      description: What type of documentation need to be updated?
+      multiple: true
+      options:
+        - "code-comments"
+        - "docs"
+  - type: textarea
+    id: documentation-description
+    attributes:
+      label: Documentation Description
+      description: Describe what need to be updated in as much detail as you can. 
+      placeholder: What need to be updated/added?
+    validations:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Proposed Solution
+      description: Describe any proposed solution on how can this be documented
+      placeholder: How could this documentation be improved?
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+    validations:
+      required: false
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
