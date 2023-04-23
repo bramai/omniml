@@ -58,10 +58,10 @@
   color: d73a4a
   from_name: bug
 - name: "Type: Feature"
-  description: Introduction of new functionality 
+  description: Introduction of new functionality
   color: 3ad775
   from_name: enhancement
 - name: "Type: Question"
-  description: Any questions or clarification 
+  description: Any questions or clarification
   color: d876e3
   from_name: question

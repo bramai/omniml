@@ -21,7 +21,7 @@ body:
     id: documentation-description
     attributes:
       label: Documentation Description
-      description: Describe what need to be updated in as much detail as you can. 
+      description: Describe what need to be updated in as much detail as you can.
       placeholder: What need to be updated/added?
     validations:
       required: true
