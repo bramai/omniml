@@ -1,0 +1,49 @@
+name: Feature Request
+description: Adding new functionality to the package
+title: "[Feature] kebab-cased-name-of-feature"
+labels: ["Status: Pending", "Type: Feature"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        If you wish to add or request for new feature then make sure you have checked the following:
+        1. Choose relevant title for feature and describe in kebab-case
+        2. Provide the acceptance criteria
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: Feature Description
+      description: Describe the feature request in detail
+      placeholder: What will this solve?
+    validations:
+      required: true
+  - type: input
+    id: provider-information
+    attributes:
+      label: Provider Information
+      description: Please give for which provider will this to be done
+      placeholder: e.g. AWS, GCP, Azure, Custom, All
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Proposed Solution
+      description: In case you have the solution then describe it in as detailed as possible.
+      placeholder: How could this feature can be implemented?
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+    validations:
+      required: false
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information

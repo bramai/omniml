@@ -1,0 +1,97 @@
+name: Bug Report
+description: There seems to be an issue with the functionality.
+title: "[Bug] kebab-cased-shortened-bug-description"
+labels: ["Status: Pending", "Type: Bug"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use this template to report bugs, for any security issues please act as described in the project's *security policy*
+  - type: input
+    id: affected-version
+    attributes:
+      label: Affected Version
+      description: Name the known versions or main branches of the project that the bug affects.
+      placeholder: e.g. 1.2.1, 2.0.0, main
+    validations:
+      required: true
+  - type: input
+    id: system-information
+    attributes:
+      label: System Information
+      description: Name any additional information on what system does this happen.
+      placeholder: e.g. Windows 10 Pro, MacOs
+    validations:
+      required: false
+  - type: input
+    id: provider-information
+    attributes:
+      label: Provider Information
+      description: Please give for which provider does this error occurred?
+      placeholder: e.g. AWS, GCP, Azure, Custom
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug Description
+      description: Describe the bug's behavior as detailed as possible.
+      placeholder: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: Describe how you expected the package to behave as specifical as possible.
+      placeholder: What should have happened?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce-steps
+    attributes:
+      label: Steps to Reproduce
+      description: Describe how to reproduce the bug step-by-step as detailed as possible. Its better to use orderd list.
+      placeholder: |
+        1. Install package.
+        2. Then, create class instance.
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution-proposal
+    attributes:
+      label: Proposed Solution
+      description: In case you have the solution then describe it in as detailed as possible.
+      placeholder: How could the bug be solved?
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Describe potential side effects of your solution proposal, which could cause follow-up issues, to the best of your knowledge.
+      placeholder: Could my solution proposal cause other problems?
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Specify the acceptance criteria as a task list that contains one or more entries.
+      placeholder: |
+        - [ ] Do this
+        - [ ] Do that
+        ...
+    validations:
+      required: false
+  - type: textarea
+    id: further-information
+    attributes:
+      label: Further Information
+      description: Add additional helpful, issue-related information, such as, links, screenshots, sketches, considerations, thoughts, etc.
+      placeholder: Helpful information
+  # - type: textarea
+  #   id: related-issues
+  #   attributes:
+  #     label: Related Issues
+  #     description: Add a bullet point list of other related issues, in case there are any. In particular, the issue(s) (if you can narrow it/them down) that introduced the bug would be helpful.
+  #     placeholder: |
+  #       - #2
+  #       - #6
+  #       ...
